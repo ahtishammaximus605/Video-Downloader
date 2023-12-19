@@ -1,0 +1,13 @@
+
+Akotlin:S108¤")Either remove or fill this block of code.(å¥‡
+rkotlin:S1192‰"TDefine a constant instead of duplicating this literal "com.facebook.katana" 3 times.(èñúÿÿÿÿ
+okotlin:S3776A"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(¶Á»¬şÿÿÿÿ
+pkotlin:S3776È"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ÀùÅúÿÿÿÿ
+pkotlin:S3776í"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(ÕóŞ†ûÿÿÿÿ
+5kotlin:S6310"Avoid hardcoded dispatchers.(Í¡·Ş
+5kotlin:S6310“"Avoid hardcoded dispatchers.(Í¡·Ş
+5kotlin:S6310"Avoid hardcoded dispatchers.(Í¡·Ş
+5kotlin:S6310°"Avoid hardcoded dispatchers.(Í¡·Ş
+5kotlin:S6310·"Avoid hardcoded dispatchers.(Í¡·Ş
+5kotlin:S6310Ë"Avoid hardcoded dispatchers.(Í¡·Ş
+Gkotlin:S1066˜".Merge this "if" statement with the nested one.(ŸŞ·»

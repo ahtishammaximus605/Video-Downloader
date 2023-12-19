@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id "kotlin-kapt"
+    id "com.google.devtools.ksp"
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+  applicationId "com.fb.video.downloader.download.video.fb.fastvid.video.saver.app" //realease
+  //    applicationId "com.vid.videodownloader"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 31
+        versionName "1.0.31"
+        project.archivesBaseName = "Facebook Video Downloader " + versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources = false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "admob_sdk_key", "ca-app-pub-8234579426147131~6350941579" ////release
+            resValue "string", "email", "thinkshotinc@gmail.com"
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources = false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "admob_sdk_key", "ca-app-pub-3940256099942544~3347511713" ////debug
+            resValue "string", "email", "demo@demo.com"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.7.0'
+    //implementation 'androidx.lifecycle:lifecycle-process:2.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.4"
+    // kotlin
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation "androidx.activity:activity-ktx:1.7.2"
+
+    // UI
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation ("com.github.bumptech.glide:glide:4.13.2"){
+        exclude group: "com.android.support"
+    }
+    kapt "com.github.bumptech.glide:compiler:4.13.2"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.13.2"
+    kapt 'androidx.annotation:annotation:1.6.0'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.guolindev.permissionx:permissionx:1.6.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.0'
+    implementation "com.github.skydoves:powermenu:2.2.0"
+    implementation 'com.airbnb.android:lottie:5.2.0'
+    //---------- Ads & Firebase
+    //implementation 'com.google.android.gms:play-services-ads:21.0.0'
+    //AD Colony
+
+    api 'com.facebook.shimmer:shimmer:0.5.0@aar'
+    implementation platform('com.google.firebase:firebase-bom:29.3.1')
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation "com.android.billingclient:billing-ktx:6.0.1"
+    implementation 'com.google.code.gson:gson:2.9.1'
+    //fetch downloader
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.6"
+    implementation "androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6"
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-process:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
+    kapt "androidx.lifecycle:lifecycle-common-java8:2.6.1"
+   // implementation "net.sourceforge.htmlunit:htmlunit:2.40.0"
+
+}

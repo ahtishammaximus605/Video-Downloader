@@ -1,0 +1,41 @@
+
+6kotlin:S1259"Remove this commented out code.(—ƒˆÿ
+;kotlin:S125O"Remove this commented out code.(ÉËÏçüÿÿÿÿ
+Fkotlin:S108á")Either remove or fill this block of code.(”Ñ˜•øÿÿÿÿ
+1kotlin:S1128"Remove this unused import.(îâœu
+7kotlin:S1128"Remove this unused import.(ÚÚÙÁúÿÿÿÿ
+7kotlin:S1128"Remove this unused import.(ö²¡Äþÿÿÿÿ
+:kotlin:S1874i"#Deprecated code should not be used.(íÄã
+:kotlin:S1874i"#Deprecated code should not be used.(íÄã
+;kotlin:S1874À"#Deprecated code should not be used.(íÄã
+;kotlin:S1874À"#Deprecated code should not be used.(íÄã
+Hkotlin:S1874Ù"#Deprecated code should not be used.(ñ‚Šçùÿÿÿÿ8é©¸±™1
+Hkotlin:S1874Ü"#Deprecated code should not be used.(Ãòôáüÿÿÿÿ8é©¸±™1
+Hkotlin:S1874á"#Deprecated code should not be used.(”Ñ˜•øÿÿÿÿ8é©¸±™1
+Hkotlin:S1874æ"#Deprecated code should not be used.(Û¢‚Ãúÿÿÿÿ8é©¸±™1
+Gkotlin:S1874"#Deprecated code should not be used.(óÒÎÿúÿÿÿÿ8ê©¸±™1
+Gkotlin:S1874"#Deprecated code should not be used.(¿¦ãõûÿÿÿÿ8ê©¸±™1
+;kotlin:S1874"#Deprecated code should not be used.(µ¤å¯
+@kotlin:S1874""#Deprecated code should not be used.(ÜÞÊþøÿÿÿÿ
+Gkotlin:S1874,"#Deprecated code should not be used.(ÐÐ½Ðúÿÿÿÿ8ê©¸±™1
+Bkotlin:S1874-"#Deprecated code should not be used.(¤³‰±8ê©¸±™1
+Gkotlin:S1874E"#Deprecated code should not be used.(ÐÐ½Ðúÿÿÿÿ8ê©¸±™1
+Bkotlin:S1874F"#Deprecated code should not be used.(¤³‰±8ê©¸±™1
+:kotlin:S1874i"#Deprecated code should not be used.(íÄã
+:kotlin:S1874i"#Deprecated code should not be used.(íÄã
+Gkotlin:S1874x"#Deprecated code should not be used.(ÐÐ½Ðúÿÿÿÿ8ê©¸±™1
+Bkotlin:S1874y"#Deprecated code should not be used.(¤³‰±8ê©¸±™1
+Ckotlin:S1874˜"#Deprecated code should not be used.(ÖÉÁË8ê©¸±™1
+Ckotlin:S1874š"#Deprecated code should not be used.(¤³‰±8ê©¸±™1
+;kotlin:S1874À"#Deprecated code should not be used.(íÄã
+;kotlin:S1874À"#Deprecated code should not be used.(íÄã
+Hkotlin:S1874Ê"#Deprecated code should not be used.(ÐÐ½Ðúÿÿÿÿ8ë©¸±™1
+Ckotlin:S1874Ë"#Deprecated code should not be used.(¤³‰±8ë©¸±™1
+Hkotlin:S1874Ù"#Deprecated code should not be used.(ñ‚Šçùÿÿÿÿ8ë©¸±™1
+Hkotlin:S1874Ü"#Deprecated code should not be used.(Ãòôáüÿÿÿÿ8ë©¸±™1
+Hkotlin:S1874á"#Deprecated code should not be used.(”Ñ˜•øÿÿÿÿ8ë©¸±™1
+Hkotlin:S1874æ"#Deprecated code should not be used.(Û¢‚Ãúÿÿÿÿ8ë©¸±™1
+kkotlin:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(¤é¯Ü
+xkotlin:S1186æ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Û¢‚Ãúÿÿÿÿ
+Gkotlin:S1066£".Merge this "if" statement with the nested one.(µ¬ûŒ
+Lkotlin:S1066¤".Merge this "if" statement with the nested one.(êÐÛûùÿÿÿÿ

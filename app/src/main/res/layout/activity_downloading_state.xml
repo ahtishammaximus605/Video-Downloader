@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DownloadingStateActivity">
+
+
+    <ImageView
+        android:id="@+id/back_press"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="invisible"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drama_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_press">
+
+        <TextView
+
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:text="Please wait while we are preparing your download."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/drama_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Fetching"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        </TextView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="-15dp"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/drama_text"
+            app:layout_constraintStart_toEndOf="@+id/drama_text"
+            app:layout_constraintTop_toTopOf="@+id/drama_text"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/dramatize"
+            app:lottie_speed="1.5">
+
+        </com.airbnb.lottie.LottieAnimationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/downloaded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+android:layout_marginTop="@dimen/_35sdp"
+android:visibility="gone"
+        android:background="@drawable/bg_items"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_press">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/downloaded_tick" />
+
+
+        <TextView
+
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Download Completed"
+            android:textColor="@color/gray"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+            app:layout_constraintStart_toEndOf="@+id/animation_view"
+            app:layout_constraintTop_toTopOf="@+id/animation_view" />
+
+        <ImageView
+            android:id="@+id/open_downloads"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/play_ic"
+            app:iconPadding="4dp"
+            app:iconSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/animation_view" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/share_ic"
+            app:iconPadding="4dp"
+            app:iconSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/open_downloads"
+            app:layout_constraintTop_toTopOf="@+id/animation_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/video_already"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="Video Already Downloaded..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_already_title">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/video_already_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drama_layout">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/go_to_downloads"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/background_blue"
+        android:text="View"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_already">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <FrameLayout
+        android:id="@+id/castNative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@drawable/shadowbackallcornerround"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drama_layout">
+
+        <include layout="@layout/shimmer_layout" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

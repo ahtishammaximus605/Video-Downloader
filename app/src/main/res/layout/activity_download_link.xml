@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DownloadLinkActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navigationContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigationContent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_500sdp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linkNative">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:text=" Click Download Button to Download."
+                    android:textSize="12dp"
+                    android:textColor="@color/silver"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=" Paste Video Url Here."
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/silver"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="15dp"
+                    android:text="2"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center"
+                    android:textSize="10dp"
+                    android:background="@drawable/circle_blue"
+                    android:textColor="@color/purple_500"
+                    app:layout_constraintStart_toStartOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="15dp"
+                    android:text="3"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center"
+                    android:textSize="10dp"
+                    android:background="@drawable/circle_blue"
+                    android:textColor="@color/purple_500"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:text="1"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center"
+                    android:textSize="10dp"
+                    android:background="@drawable/circle_blue"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/purple_500"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/done"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/download_tick"
+                    android:textColor="@color/purple_500"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="10dp"
+                    android:text="How To Download Video:"
+                    android:textStyle="bold"
+                    android:textColor="#2B2B2B"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/donetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=" Done! Now the download will start."
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/silver"
+                    app:layout_constraintBottom_toBottomOf="@+id/done"
+                    app:layout_constraintStart_toEndOf="@+id/done"
+                    app:layout_constraintTop_toTopOf="@+id/done" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/silver"
+                    android:text=" Copy Url of Desired Video."
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:background="@drawable/bg_edit_text"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:ems="10"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/paste"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:text="Paste facebook video Link Here"
+                    android:textColor="#E9DADADA"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
+                <TextView
+                    android:id="@+id/paste"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_41sdp"
+                    android:background="@drawable/bg_edit_text_blue"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="Paste"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:iconPadding="4dp"
+                    app:iconSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/clear_text"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:visibility="gone"
+                    android:background="@drawable/cross_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#B2B2B2"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/background_dark"
+                android:drawableStart="@drawable/down_arrow"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_100sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="   Download"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loading_vid"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:visibility="gone"
+                android:layout_marginTop="-25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading_mat"
+                app:lottie_speed="1.5">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/downloading_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+         android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_items"
+                android:elevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button">
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/thumbnail_ic" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ellipsize="end"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toTopOf="@+id/txtDuration"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/imgIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download File:"
+                    app:layout_constraintStart_toStartOf="@+id/txtName"
+                    app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="80%"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtDuration"
+                    app:layout_constraintStart_toEndOf="@+id/txtDuration"
+                    app:layout_constraintTop_toTopOf="@+id/txtDuration" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/close_btn" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:progressTint="@color/purple_500"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtDuration"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSize" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/downloaded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_items"
+                android:elevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:flow_horizontalAlign="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/downloaded_tick" />
+
+
+                <TextView
+
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download Completed"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+                    app:layout_constraintStart_toEndOf="@+id/animation_view"
+                    app:layout_constraintTop_toTopOf="@+id/animation_view" />
+
+                <TextView
+                    android:id="@+id/open_downloads"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/bg_edit_text_blue"
+                    android:gravity="center"
+                    android:text="View"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:iconPadding="4dp"
+                    app:iconSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/animation_view" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/linkNative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="gone"
+                android:background="@drawable/shadowbackallcornerround"
+                android:elevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/downloading_item">
+
+                <include layout="@layout/shimmer_layout" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lytInterProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/progress_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

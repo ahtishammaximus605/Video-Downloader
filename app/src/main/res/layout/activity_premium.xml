@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_prem_gardient"
+    tools:context=".views.PremiumActivity">
+
+    <ImageView
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lytBanner"
+        app:srcCompat="@drawable/premium_bg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout12">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lytBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar7"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lytWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gold"
+                app:tint="@color/silver" />
+
+            <TextView
+                android:id="@+id/txtpriceweek"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="PKR Rs. 174.44"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textView40"
+                app:layout_constraintStart_toStartOf="@+id/imageView21"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly Subscription"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpriceweek"
+                app:layout_constraintEnd_toStartOf="@+id/textView45"
+                app:layout_constraintStart_toEndOf="@+id/txtpriceweek"
+                app:layout_constraintTop_toTopOf="@+id/txtpriceweek" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:text="BRONZE"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpriceweek"
+                app:layout_constraintEnd_toEndOf="@+id/imageView21"
+                app:layout_constraintTop_toTopOf="@+id/txtpriceweek" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lytMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-13dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lytWeek">
+
+            <ImageView
+                android:id="@+id/imageView211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_gold1" />
+
+            <TextView
+                android:id="@+id/txtpricemonth"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="PKR Rs. 174.44"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textView401"
+                app:layout_constraintStart_toStartOf="@+id/imageView211"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView401"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Subscription"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpricemonth"
+                app:layout_constraintEnd_toStartOf="@+id/textView451"
+                app:layout_constraintStart_toEndOf="@+id/txtpricemonth"
+                app:layout_constraintTop_toTopOf="@+id/txtpricemonth" />
+
+            <TextView
+                android:id="@+id/textView451"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="SILVER"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpricemonth"
+                app:layout_constraintEnd_toEndOf="@+id/imageView211"
+                app:layout_constraintTop_toTopOf="@+id/txtpricemonth" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lytMonth3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-13dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lytMonth">
+
+            <ImageView
+                android:id="@+id/imageView2113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gold"
+                app:tint="@color/silver" />
+
+            <TextView
+                android:id="@+id/txtpricemonth3"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="PKR Rs. 174.44"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textView4013"
+                app:layout_constraintStart_toStartOf="@+id/imageView2113"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Month Subscription"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpricemonth3"
+                app:layout_constraintEnd_toStartOf="@+id/textView4513"
+                app:layout_constraintStart_toEndOf="@id/txtpricemonth3"
+                app:layout_constraintTop_toTopOf="@+id/txtpricemonth3" />
+
+            <TextView
+                android:id="@+id/textView4513"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="GOLD"
+                android:textColor="@color/silver"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtpricemonth3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2113"
+                app:layout_constraintTop_toTopOf="@+id/txtpricemonth3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lytPurchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#38A4F9"
+            android:text="Make Payment"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinueWithAds2"
+            app:layout_constraintEnd_toEndOf="@+id/btnContinueWithAds2"
+            app:layout_constraintStart_toStartOf="@+id/btnContinueWithAds2"
+            app:layout_constraintTop_toBottomOf="@+id/lytMonth3">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <TextView
+            android:id="@+id/btnContinueWithAds2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Auto Renewal and cancel at anytime"
+            android:textColor="#363636"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinueWithAds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Get premium"
+            android:textColor="#576169"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/lytWeek"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnContinueWithAds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/continue_with_ads"
+            android:textColor="#2E70CC"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnContinueWithAds2"
+            app:layout_constraintStart_toStartOf="@+id/btnContinueWithAds2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="-35dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bx" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/download_unlimited"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView47"
+            app:layout_constraintEnd_toEndOf="@+id/textView47"
+            app:layout_constraintStart_toStartOf="@+id/textView47"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/download_ic" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Remove All Ads"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView10"
+            app:layout_constraintEnd_toStartOf="@id/textView23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="24/7 User Support"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textView47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-10dp"
+            android:text="Cast To TV in HD"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:srcCompat="@drawable/support_ic" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="@+id/textView21"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/no_ad" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/hd_cast" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lytInterProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/progress_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytBanner"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="#030303" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+
+Mkotlin:S108†")Either remove or fill this block of code.(ñ·ÛÁıÿÿÿÿ8»¥½ù1
+Mkotlin:S108ˆ")Either remove or fill this block of code.(›ì…Ùúÿÿÿÿ8»¥½ù1
+Mkotlin:S108‹")Either remove or fill this block of code.(ùÙ‚Ñüÿÿÿÿ8›Õøø1
+Mkotlin:S1172Ú"-Remove this unused function parameter "name".(†óŒÄ8»¥½ù1
+Ykotlin:S899ü":Do something with the "Boolean" value returned by "mkdir".(œÃü 8Ê¥½ù1
+Ekotlin:S6615»" Remove this useless initializer.(Çş¾ôüÿÿÿÿ8Ñ¥½ù1
+2kotlin:S1128"Remove this unused import.(ıºÎà
+1kotlin:S1128"Remove this unused import.(îâœu
+7kotlin:S1128	"Remove this unused import.(ÚÚÙÁúÿÿÿÿ
+7kotlin:S1128"Remove this unused import.(œô”şúÿÿÿÿ
+7kotlin:S1128"Remove this unused import.(ü‘»¡ıÿÿÿÿ
+2kotlin:S1128"Remove this unused import.(åå
+2kotlin:S1128"Remove this unused import.(İ˜Æ‚
+2kotlin:S1128"Remove this unused import.(Ñå¾ô
+ukotlin:S1192Ã"PDefine a constant instead of duplicating this literal "Not Available! " 4 times.(ÇÚ¸şÿÿÿÿ8Ş¥½ù1
+qkotlin:S3776U"RRefactor this method to reduce its Cognitive Complexity from 58 to the 15 allowed.(ëü«8¶Œ¼ù1
+wkotlin:S3776è"RRefactor this method to reduce its Cognitive Complexity from 48 to the 15 allowed.(ƒ®íÂûÿÿÿÿ8ê¥½ù1
+rkotlin:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ˆößÄ8ê¥½ù1
+<kotlin:S6310¼"Avoid hardcoded dispatchers.(Ô¥‚ü8í¥½ù1
+<kotlin:S6310’"Avoid hardcoded dispatchers.(Í¡·Ş8î¥½ù1
+Nkotlin:S1066Ö".Merge this "if" statement with the nested one.(”ùÅˆ8ú¥½ù1
+Nkotlin:S1066¡".Merge this "if" statement with the nested one.(ã—¥ª8ú¥½ù1
+Nkotlin:S1066¢".Merge this "if" statement with the nested one.(šèÿÅ8ú¥½ù1

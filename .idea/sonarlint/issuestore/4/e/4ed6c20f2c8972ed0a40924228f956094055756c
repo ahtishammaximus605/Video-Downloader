@@ -1,0 +1,34 @@
+
+Gkotlin:S108v")Either remove or fill this block of code.(òÕ«‹8ÜŞ£÷1
+Hkotlin:S108•")Either remove or fill this block of code.(½ûöÆ8İŞ£÷1
+Hkotlin:S108Ğ")Either remove or fill this block of code.(şƒõü8İŞ£÷1
+Hkotlin:S108Ò")Either remove or fill this block of code.(ãĞ±8ÔÈ”÷1
+Mkotlin:S108³")Either remove or fill this block of code.(Âî€Íùÿÿÿÿ8ŞŞ£÷1
+Hkotlin:S108¶")Either remove or fill this block of code.(ãĞ±8ŞŞ£÷1
+Mkotlin:S108¾")Either remove or fill this block of code.(Âî€Íùÿÿÿÿ8ŞŞ£÷1
+Hkotlin:S108Á")Either remove or fill this block of code.(ãĞ±8ßŞ£÷1
+[kotlin:S1172ı"6Use "_" instead of this unused lambda parameter "it1".(Ÿ¶´Şşÿÿÿÿ8ßŞ£÷1
+Rkotlin:S1481ö"-Remove this unused "dataList" local variable.(ÆÖî©ÿÿÿÿÿ8ïŞ£÷1
+Hkotlin:S1481û"(Remove this unused "src" local variable.(´´¸¡8ïŞ£÷1
+Jkotlin:S1481ÿ"*Remove this unused "srchd" local variable.(äûŞÛ8äÈ”÷1
+`kotlin:S6615š";Remove this variable, which is assigned but never accessed.(ä”óóıÿÿÿÿ8ôŞ£÷1
+Fkotlin:S6615Î"&The value assigned here is never used.(¯·‡¼8ôŞ£÷1
+Fkotlin:S6615Ì"&The value assigned here is never used.(°µû‰8ôŞ£÷1
+Fkotlin:S6615Ç"&The value assigned here is never used.(°µû‰8ôŞ£÷1
+Fkotlin:S6615Ê"&The value assigned here is never used.(°µû‰8ôŞ£÷1
+Ekotlin:S6615š" Remove this useless initializer.(²äšùÿÿÿÿ8ôŞ£÷1
+Ekotlin:S6615™" Remove this useless initializer.(Çş¾ôüÿÿÿÿ8õŞ£÷1
+Ekotlin:S6615ã" Remove this useless initializer.(Şİş–ùÿÿÿÿ8õŞ£÷1
+Ekotlin:S6615â" Remove this useless initializer.(²äšùÿÿÿÿ8õŞ£÷1
+Ekotlin:S6615á" Remove this useless initializer.(Çş¾ôüÿÿÿÿ8õŞ£÷1
+qkotlin:S1192¢"QDefine a constant instead of duplicating this literal "Video Not Found!" 3 times.(ÄÏï8ß£÷1
+Hkotlin:S1874©"#Deprecated code should not be used.(É•êúÿÿÿÿ8‰ß£÷1
+rkotlin:S3776—"RRefactor this method to reduce its Cognitive Complexity from 75 to the 15 allowed.(–ö ´8ß£÷1
+wkotlin:S3776à"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(«å¬»ûÿÿÿÿ8ß£÷1
+Qkotlin:S6529"1Replace collection size check with "isNotEmpty()"(ëŸ“Ÿ8ß£÷1
+Qkotlin:S6529ö"1Replace collection size check with "isNotEmpty()"(ëŸ“Ÿ8ß£÷1
+ckotlin:S6529ù"DReplace null check and collection size check with "!isNullOrEmpty()"(¯ãÒ`8‘ß£÷1
+<kotlin:S6310¹"Avoid hardcoded dispatchers.(˜–ıÙ8’ß£÷1
+Akotlin:S6310à"Avoid hardcoded dispatchers.(«å¬»ûÿÿÿÿ8’ß£÷1
+Pkotlin:S1144¹"0Remove this unused private "downloadUrl" method.(˜–ıÙ8™ß£÷1
+Nkotlin:S1066×".Merge this "if" statement with the nested one.(”ùÅˆ8¢ß£÷1
